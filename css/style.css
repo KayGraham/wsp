@@ -1,5 +1,22 @@
-/* ---- LAYOUT --- */
-/* ---- TYPOGRAPHY --- */
-/* ---- NAVIGATION --- */
-/* ---- MISC --- */	border: 10px solid #5EA5C2;
+body {
+	width: 960px;
+	border: 10px solid #5EA5C2;
 	font-family: Arial;
+	color: #585858 ;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 50px auto;
+	line-height:18px;
+}
+body a {
+	text-decoration: none;
+	color: #5EA5C2;
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+ul {
+	list-style-type: none;
+}
