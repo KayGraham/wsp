@@ -4,12 +4,12 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Water Services LTD- Contact</title>
-	<meta name="description" content="Contact Water Services LTD">
-	<meta name="author" content="Water Services LTD">
+	<title>Water Services LTD</title>
+	<meta name="description" content="Water Services LTD Home Page">
+	<meta name="author" content="Water Services Ltd">
 
 	<meta name="viewport" content="width=device-width">
 
@@ -17,56 +17,87 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
+	
+	<style type="text/css">
+.container {
+	background-image: url(images/background-middle.jpg);
+	background-repeat: repeat;
+}
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
 </head>
 
 <body>
 	<div class="container">
-		<section class="grid_5">
-			<header>
-				<article>
-					<h1>Water Services LTD</h1>
+		<header class="grid_12">
+			<section class="grid_4 alpha" >
+			  <article>
+					<a href="index.html" alt="Home Page"><section class="img"><img src="images/logo.jpg" alt="Water Services LTD Logo" /></section></a>
 				</article>
-			</header>
-		</section>
-		
-		<nav class="grid_7">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="products_services.html">Products & Services</a></li>
-				<li><a href="downloads.html">Downloads</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="partners.html">Partners</a></li>
-			</ul>
-		</nav>
-		<section class="grid_12">
-			<article>
+			</section>
+			<div class="grid_7 omega">
+				<nav class="clearfix">
+					<ul class="clearfix">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products_services.html">Services</a></li>
+						<li><a href="downloads.html">Downloads</a></li>
+						<li class="current"><a href="contact.html">Contact</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="partners.html">Partners</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/menu.jpg" alt="Site Navigation" /></a>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="container">
+		<section class="maincontent grid_12">
+				<article>
 					<h2>WATER TREATMENT CHEMICALS <br>AND INDUSTRIAL SOLUTIONS</h2>
 				</article>
 		</section>
-		<section class="grid_12">
+		<section class="maincontent grid_12">
 	<article>
 		<section class="grid_5 alpha">
 			<img src="images/contact.jpg" alt="Customer Service Reps" />
-		</section>
-		<section class="grid_5 ">
-			<h3>Get in touch</h3>
 			<p>Athens Greece<br>
 			Phone: +30 6948 518699<br>
 			Fax: +30 210 6854892<br>
 			Email: <a href="mailto:admin@power-chemicals.com">admin@power-chemicals.com</a></p>
+			<iframe width="395" height="390" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=google+maps+Athens+Greece&amp;ie=UTF8&amp;hq=&amp;hnear=Athens,+Kentrikos+Tomeas+Athinon,+Greece&amp;gl=us&amp;ll=37.983715,23.72931&amp;spn=0.142696,0.179729&amp;t=m&amp;z=13&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=google+maps+Athens+Greece&amp;ie=UTF8&amp;hq=&amp;hnear=Athens,+Kentrikos+Tomeas+Athinon,+Greece&amp;gl=us&amp;ll=37.983715,23.72931&amp;spn=0.142696,0.179729&amp;t=m&amp;z=13&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		</section>
+		<section class="grid_5 omega">
+			<h3>Get in touch</h3>
+			<iframe src="https://docs.google.com/forms/d/1M9g2oaIREV9rBdummQkPFLGrBqsZo2oySGt0DL-1Jtw/viewform?embedded=true" width="480" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			
 		</section>	
 	</article>
 	</section>
-	<section class="grid_12">
-			<hr>
 		</section>
-	<footer class="grid_12">
-		<p>Copyright &copy; 2013 Water Service LTD | Iconography by <a href="http://www.flickr.com/photos/martiniko/305631577/">Martin Sordilla</a></p>
-	</footer>
+	<footer class="footercontent grid_12 ">
+						<p>Copyright &copy; 2013 Water Service LTD | Iconography by <a href="http://www.flickr.com/photos/martiniko/305631577/">Martin Sordilla</a></p>
+		</footer>
 </div><!-- .container -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>

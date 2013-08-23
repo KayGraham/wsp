@@ -6,29 +6,230 @@ Copyright 2013, Josh Cope
 /* =============================================================================
    Site Styles
    ========================================================================== */
+body {
+	background-color: #363636;
+	font-family: Verdana, Geneva, sans-serif;
+}
+body a {
+	color: #e43a0d;
+}
+
+header {
+	background-color: #4d4d4d;
+	padding-right: 30px;
+}
+.maincontent {
+	background-color: #FFF;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+.footercontent  {
+	background-color: #4d4d4d;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 11pt;
+	font-family:  Arial, sans-serif;
+	color: #c7c7c7;
+}
+h1 {
+	font-family: "Arial Narrow", Arial, sans-serif;
+}
+h2 {
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
 nav li {
 	display: inline;
 }
-/* =============================================================================
-   Page Styles
-   ========================================================================== */
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
 
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
+}
 
-/* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+/* Basic Styles */
 
-/* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+nav {
+	height: 60px;
+	width: 650px;
+	background: #4d4d4d;
+	font-size: 11pt;
+	font-family:  Arial, sans-serif;
+	padding-top: 30px;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 650px;
+	height: 40px;
+}
+nav li {
+	display: inline;
+	float: left;
+	margin-right: 5px;
+}
+.current {
+	background-color: #363636;
+}
+nav a {
+	color: #c7c7c7;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0px #283744;
+}
+nav li a {
+	
+}
+nav a:hover, nav a:active {
+	background-color: #363636;
+}
+nav a#pull {
+	display: none;
+}
 
-/* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+/***************************Styles for screen 996px and lower*****************************/
+@media only screen and (max-width: 995px) {
+	header {
+	background-color: #4d4d4d;
+	padding-right: 30px;
+}
+.maincontent {
+	background-color: #FFF;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+.footercontent  {
+	background-color: #4d4d4d;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 11pt;
+	font-family:  Arial, sans-serif;
+	color: #c7c7c7;
+}
+nav li {
+	display: inline;
+}
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
 
-/* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+}
 
+/* Basic Styles */
+
+nav {
+	height: 70%;
+	width: 70%;
+	background: #4d4d4d;
+	font-size: 90%;
+	font-family:  Arial, sans-serif;
+	padding-top: 20px;
+	position: relative;
+}
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 630px;
+	height: 35px;
+}
+nav li {
+	display: inline;
+	float: left;
+	margin-right: 5px;
+}
+.current {
+	background-color: #363636;
+}
+nav a {
+	color: #c7c7c7;
+	display: block;
+	width: 80px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0px #283744;
+}
+nav li a {
+	
+}
+nav a:hover, nav a:active {
+	background-color: #363636;
+}
+nav a#pull {
+	display: none;
+}
+	iframe {
+	width: 95%;
+	}
+}
+/******************************Styles for screen 515px and lower*************************/
+@media only screen and (max-width : 480px) {
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: #283744;
+		width: 50px;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		width: 30px;
+		height: 30px;
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	nav li {
+		display: block;
+	}
+		iframe {
+	width: 90%;
+	height: 90%;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 380px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 80px;;
+	}
+	nav li a {
+		border-bottom: 1px solid #c7c7c7;
+	}
+	iframe {
+	width: 90%;
+	height: 90%;
+	}
+}
 
 /* =============================================================================
    Font-Face
@@ -45,3 +246,4 @@ url('../fonts/FontName.svg#FontName') format('svg');
 font-weight: normal;
 font-style: normal; }
 */
+

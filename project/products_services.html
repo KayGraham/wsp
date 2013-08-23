@@ -4,12 +4,12 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Water Services LTD- Products and Services</title>
-	<meta name="description" content="Water Services LTD Products and Services offered">
-	<meta name="author" content="Water Services LTD">
+	<title>Water Services LTD</title>
+	<meta name="description" content="Water Services LTD Home Page">
+	<meta name="author" content="Water Services Ltd">
 
 	<meta name="viewport" content="width=device-width">
 
@@ -17,38 +17,68 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
+	
+	<style type="text/css">
+.container {
+	background-image: url(images/background-middle.jpg);
+	background-repeat: repeat;
+}
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
 </head>
 
 <body>
 	<div class="container">
-		<section class="grid_5">
-			<header>
-				<article>
-					<h1>Water Services LTD</h1>
+		<header class="grid_12">
+			<section class="grid_4 alpha" >
+			  <article>
+					<a href="index.html" alt="Home Page"><section class="img"><img src="images/logo.jpg" alt="Water Services LTD Logo" /></section></a>
 				</article>
-			</header>
-		</section>
-		
-		<nav class="grid_7">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="products_services.html">Products & Services</a></li>
-				<li><a href="downloads.html">Downloads</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="partners.html">Partners</a></li>
-			</ul>
-		</nav>
-		<section class="grid_12">
-			<article>
+			</section>
+			<div class="grid_7 omega">
+				<nav class="clearfix">
+					<ul class="clearfix">
+						<li ><a href="index.html">Home</a></li>
+						<li class="current"><a href="products_services.html">Services</a></li>
+						<li><a href="downloads.html">Downloads</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="partners.html">Partners</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/menu.jpg" alt="Site Navigation" /></a>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="container">
+		<section class="maincontent grid_12">
+				<article>
 					<h2>WATER TREATMENT CHEMICALS <br>AND INDUSTRIAL SOLUTIONS</h2>
 				</article>
 		</section>
 		<article>
-	<section class="grid_12">
+	<section class="maincontent grid_12">
 	<article>
 		<section class="grid_6 alpha">	
 		<h2>Products and Services</h2>
@@ -57,7 +87,7 @@
 
 			<p>Our major locations are staffed with qualified chemist using modern laboratory facilities
 				to provide analytical and quality control services. We are committed to provide prompt, dependable services.</p>
-
+			<iframe width="460" height="315" src="http://www.youtube.com/embed/0bXIqS5NcRY" frameborder="0" allowfullscreen></iframe>
 			<strong>Services includes but not limited to:</strong>
 				<ul>
 					<li><a href="#">Complete service program</a></li>
@@ -67,7 +97,12 @@
 					<li><a href="#">Industry Specialists</a></li>
 					<li><a href="#">Software development</a></li>
 				</ul>
-			<p>Besides the quality and efficiency of the offered product line, Water Services Ltd pays great attition
+			
+	</section>
+	<section class="grid_6 omega">
+	
+		<img src="images/products.png" alt="Water Tower" />
+		<p>Besides the quality and efficiency of the offered product line, Water Services Ltd pays great attition
 				to the application services, so has included to its trade name.</p>
 			<p>We are not only applying the best available techniques worldwide, but Water services Ltd 
 				creates new ways and approaches to the classic applications.</p>
@@ -80,9 +115,6 @@
 					<li>Plant personel training</li>
 					<li>Treatment manuals</li>
 				</ul>
-	</section>
-	<section class="grid_6 omega">
-		<img src="images/products.png" alt="Water Tower" />
 		<h3>More Information about our services</h3>
 		<h4>The Water Services's Services</h4>
 		<p>Service is an integral part of the Program and, therefore, does not incur any additional
@@ -93,15 +125,14 @@
 		to identify, to face and to treat any kind of cooling water treatment problem as to
 		permit to the system to run in maximum efficiency with minor problems.</p>
 		<p><a href="#">Read More...</a></p>
+		
 	</section>
 	</article>
 	</section>
-	<section class="grid_12">
-			<hr>
 		</section>
-	<footer class="grid_12">
-		<p>Copyright &copy; 2013 Water Service LTD | Iconography by <a href="http://www.flickr.com/photos/pavel/4412329031/">Pavel Tcholakov</a></p>
-	</footer>
+	<footer class="footercontent grid_12 ">
+						<p>Copyright &copy; 2013 Water Service LTD | Iconography by <a href="http://www.flickr.com/photos/pavel/4412329031/">Pavel Tcholakov</a></p>
+		</footer>
 </div><!-- .container -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
