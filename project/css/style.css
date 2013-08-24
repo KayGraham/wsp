@@ -8,10 +8,13 @@ Copyright 2013, Josh Cope
    ========================================================================== */
 body {
 	background-color: #363636;
-	font-family: Verdana, Geneva, sans-serif;
+	
 }
 body a {
 	color: #e43a0d;
+}
+body p {
+	
 }
 
 header {
@@ -24,14 +27,6 @@ header {
 	padding-right: 15px;
 	
 }
-.footercontent  {
-	background-color: #4d4d4d;
-	padding-left: 15px;
-	padding-right: 15px;
-	font-size: 11pt;
-	font-family:  Arial, sans-serif;
-	color: #c7c7c7;
-}
 h1 {
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 
@@ -39,6 +34,8 @@ h1 {
 h2 {
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
+
+
 nav li {
 	display: inline;
 }
@@ -98,7 +95,14 @@ nav a:hover, nav a:active {
 nav a#pull {
 	display: none;
 }
-
+.footercontent  {
+	background-color: #4d4d4d;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 11pt;
+	font-family:  Arial, sans-serif;
+	color: #c7c7c7;
+}
 /***************************Styles for screen 996px and lower*****************************/
 @media only screen and (max-width: 995px) {
 	header {
