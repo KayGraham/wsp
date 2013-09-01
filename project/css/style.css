@@ -204,6 +204,7 @@ nav a#pull {
 	nav ul {
 		display: none;
 		height: auto;
+		width: 50%
 	}
 	nav a#pull {
 		display: block;
