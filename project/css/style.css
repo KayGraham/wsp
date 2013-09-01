@@ -124,7 +124,7 @@ nav a#pull {
 	color: #c7c7c7;
 }
 nav li {
-	display: block;
+	display: inline;
 }
 /* Clearfix */
 .clearfix:before,
@@ -143,10 +143,10 @@ nav li {
 /* Basic Styles */
 
 nav {
-	height: 40%;
-	width: 40%;
+	height: 70%;
+	width: 70%;
 	background: #4d4d4d;
-	font-size: 80%;
+	font-size: 90%;
 	font-family:  Arial, sans-serif;
 	padding-top: 20px;
 	position: relative;
@@ -183,7 +183,6 @@ nav a:hover, nav a:active {
 nav a#pull {
 	display: none;
 }
-
 	iframe {
 	width: 95%;
 	}
@@ -196,8 +195,6 @@ nav a#pull {
 	nav ul {
 		display: none;
 		height: auto;
-		width: 50%;
-		
 	}
 	nav a#pull {
 		display: block;
@@ -216,7 +213,6 @@ nav a#pull {
 	}
 	nav li {
 		display: block;
-		float: left;
 	}
 		iframe {
 	width: 90%;
@@ -229,7 +225,7 @@ nav a#pull {
 	nav li {
 		display: block;
 		float: none;
-		width: 100%;
+		width: 80px;;
 	}
 	nav li a {
 		border-bottom: 1px solid #c7c7c7;
