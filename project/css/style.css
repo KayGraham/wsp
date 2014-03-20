@@ -150,6 +150,10 @@ nav a#pull {
 	padding-top: 100px;
 	z-index: 10;
 	}
+	
+.alignText {
+	margin-top: 69px;
+}
 footer  {
 	background-color: #183152;
 	padding-left: 15px;
