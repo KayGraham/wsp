@@ -154,7 +154,9 @@ nav a#pull {
 	margin-top: 73px;
 	
 	}
-
+video {
+display: block;
+}
 footer  {
 	background-color: #183152;
 	padding-left: 15px;
